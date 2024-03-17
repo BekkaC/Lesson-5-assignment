@@ -1,0 +1,39 @@
+/* Basic styling */
+.portfolio {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.project {
+    width: 300px;
+    padding: 20px;
+    margin: 20px;
+    border: 1px solid #ccc;
+    text-align: center;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+/* Transition effects */
+.project:nth-child(odd) {
+    background-color: #f8f9fa; /* Alternate background color for odd projects */
+    transition: background-color 0.3s ease-in-out; /* Smooth transition effect */
+}
+
+.btn {
+    transition: transform 0.3s ease-in-out; /* Smooth transition for button hover */
+}
+
+.btn:hover {
+    transform: scale(1.1); /* Scale up button on hover */
+}
